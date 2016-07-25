@@ -1,0 +1,11 @@
+{
+    "name": "rvtraveller/phplint",
+    "description": "PHPlint",
+    "authors": [
+        {
+            "name": "Brian Thompson",
+            "email": "bthompson@mindgrub.com"
+        }
+    ],
+    "require": {}
+}
