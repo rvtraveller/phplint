@@ -1,0 +1,570 @@
+
+
+Reading empty-file-unknown-extension:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,null,NULL] 
+
+Reading csv-sample-unknown-extension:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:C3
+[A1,s,"A"] A	[B1,s,"B"] B	[C1,s,"C"] C
+[A2,s,"D"] D	[B2,s,"E"] E	[C2,s,"F"] F
+[A3,s,"G"] G	[B3,s,"H"] H	[C3,s,"I"] I
+
+Reading binary-file-unknown-extension:
+None of the available readers can read binary-file-unknown-extension: 
+com\github\phpoffice\phpexcelreader\Excel5Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2003XMLReader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2007Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\OOCalcReader: Cannot read.
+com\github\phpoffice\phpexcelreader\CSVReader: Cannot read.
+
+Reading binary-file.csv:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,s,".\0000\357\277\275\357\277\275R\357\277\2758\357\277\275\357\277\275a\021\035\025\177\357\277\275v\357\277\275\\\357\277\275\000"] .?0��R�8��a???�v�\�?
+
+Reading csv-sample-utf8-bom.csv:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:C4
+[A1,s,"Sample UTF-8: \303\240\303\250\303\254\303\262\303\271"] Sample UTF-8: àèìòù	[B1,null,NULL] 	[C1,null,NULL] 
+[A2,s,"A"] A	[B2,s,"B"] B	[C2,s,"C"] C
+[A3,s,"D"] D	[B3,s,"E"] E	[C3,s,"F"] F
+[A4,s,"G"] G	[B4,s,"H"] H	[C4,s,"I"] I
+
+Reading csv-sample-utf16le-bom.csv:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:C4
+[A1,s,"Sample UTF-8: \303\240\303\250\303\254\303\262\303\271"] Sample UTF-8: àèìòù	[B1,null,NULL] 	[C1,null,NULL] 
+[A2,s,"A"] A	[B2,s,"B"] B	[C2,s,"C"] C
+[A3,s,"D"] D	[B3,s,"E"] E	[C3,s,"F"] F
+[A4,s,"G"] G	[B4,s,"H"] H	[C4,s,"I"] I
+
+Reading csv-sample-simple.csv:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:C11
+[A1,s,"Type"] Type	[B1,s,"Value"] Value	[C1,null,NULL] 
+[A2,s,"bool(FALSE)"] bool(FALSE)	[B2,s,"FALSE"] FALSE	[C2,null,NULL] 
+[A3,s,"bool(TRUE)"] bool(TRUE)	[B3,s,"TRUE"] TRUE	[C3,null,NULL] 
+[A4,s,"int(-123)"] int(-123)	[B4,n,-123] -123	[C4,null,NULL] 
+[A5,s,"float(-3.14)"] float(-3.14)	[B5,n,-3.14] -3.14	[C5,null,NULL] 
+[A6,s,"time(12:34:56)"] time(12:34:56)	[B6,s,"12:34:56"] 12:34:56	[C6,null,NULL] 
+[A7,s,"date(2015-09-30T12:34:56)"] date(2015-09-30T12:34:56)	[B7,s,"2015-09-30T12:34:56"] 2015-09-30T12:34:56	[C7,null,NULL] 
+[A8,s,"date(2015-09-30 12:34:56)"] date(2015-09-30 12:34:56)	[B8,s,"2015-09-30 12:34:56"] 2015-09-30 12:34:56	[C8,null,NULL] 
+[A9,s,"quoted string"] quoted string	[B9,s,"via \"Giusi\" Garibaldi, 1"] via "Giusi" Garibaldi, 1	[C9,null,NULL] 
+[A10,s,"UTF-8 string - no idea of what does it means"] UTF-8 string - no idea of what does it means	[B10,s,"\320\230\320\267\320\261\321\200\320\260\320\275\320\275\320\260\321\217 \321\201\321\202\320\260\321\202\321\214\321\217 - \320\233\320\270\321\202\321\203\321\200\320\263\320\270\321\207\320\265\321\201\320\272\320\270\320\271 \320\272\320\276\320\264\320\265\320\272\321\201"] Избранная статья - Литургический кодекс	[C10,null,NULL] 
+[A11,s,"long text in quotes"] long text in quotes	[B11,s,"This is a quite\nlong text between double-quotes\nspanning several lines."] This is a quite
+long text between double-quotes
+spanning several lines.	[C11,s,"Field next to the long text."] Field next to the long text.
+
+Reading empty-file.ods:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,null,NULL] 
+
+Reading binary-file.ods:
+None of the available readers can read binary-file.ods: 
+com\github\phpoffice\phpexcelreader\OOCalcReader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel5Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2003XMLReader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2007Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\CSVReader: Cannot read.
+
+Reading oo-example-alltypes.ods:
+using reader: com\github\phpoffice\phpexcelreader\OOCalcReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:B11
+[A1,s,"Bool FALSE"] Bool FALSE	[B1,b,FALSE] FALSE
+[A2,s,"Bool TRUE"] Bool TRUE	[B2,b,TRUE] TRUE
+[A3,s,"Int"] Int	[B3,n,1234] 1234
+[A4,s,"Float"] Float	[B4,n,12.34] 12.34
+[A5,s,"Date 2015-09-25"] Date 2015-09-25	[B5,n,42272.0] 2015-09-25
+[A6,s,"Time 13:00:00"] Time 13:00:00	[B6,n,0.54166666666667] 13:00:00
+[A7,s,"Date&Time 2015-09-25T13:00:00"] Date&Time 2015-09-25T13:00:00	[B7,n,42272.541666667] 2015-09-25 13:00:00
+[A8,s,"Currency \342\200\223 USD"] Currency – USD	[B8,n,1234.56] USD 1234.56
+[A9,s,"Currency \342\200\223 EUR"] Currency – EUR	[B9,n,1234.56] EUR 1234.56
+[A10,s,"Percent"] Percent	[B10,n,0.3] 0.3
+[A11,s,"Fraction"] Fraction	[B11,n,1.5] 1.5
+
+Reading oo-sample1.ods:
+using reader: com\github\phpoffice\phpexcelreader\OOCalcReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:E6
+[A1,s,"Label"] Label	[B1,s,"Number"] Number	[C1,s,"Date YYYY-MM-DD"] Date YYYY-MM-DD	[D1,s,"Date DD-MM-YYYY"] Date DD-MM-YYYY	[E1,s,"Date DD/MM/YYYY"] Date DD/MM/YYYY
+[A2,s,"Label 1"] Label 1	[B2,n,12.345] 12.345	[C2,n,42250.0] 2015-09-03	[D2,s,"03-09-2015"] 03-09-2015	[E2,n,42072.0] 2015-03-09
+[A3,s,"Label 2"] Label 2	[B3,n,0.01] 0.01	[C3,n,42250.0] 2015-09-03	[D3,null,NULL] 	[E3,null,NULL] 
+[A4,null,NULL] 	[B4,n,0.00012345] 0.00012345	[C4,null,NULL] 	[D4,null,NULL] 	[E4,null,NULL] 
+[A5,s,"Time=01:02"] Time=01:02	[B5,n,0.043055555555556] 01:02:00	[C5,null,NULL] 	[D5,null,NULL] 	[E5,null,NULL] 
+[A6,s,"Time=01:02:03.5"] Time=01:02:03.5	[B6,n,0.043096064814815] 01:02:04	[C6,null,NULL] 	[D6,null,NULL] 	[E6,null,NULL] 
+
+Reading empty-file.xls:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,null,NULL] 
+
+Reading binary-file.xls:
+None of the available readers can read binary-file.xls: 
+com\github\phpoffice\phpexcelreader\Excel5Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2003XMLReader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2007Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\OOCalcReader: Cannot read.
+com\github\phpoffice\phpexcelreader\CSVReader: Cannot read.
+
+Reading excel5-example-alltypes.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:B11
+[A1,s,"Bool FALSE"] Bool FALSE	[B1,null,NULL] 
+[A2,s,"Bool TRUE"] Bool TRUE	[B2,null,NULL] 
+[A3,s,"Int"] Int	[B3,n,1234.0] 1234
+[A4,s,"Float"] Float	[B4,n,12.34] 12.34
+[A5,s,"Date 2015-09-25"] Date 2015-09-25	[B5,n,42272.0] 2015-09-25
+[A6,s,"Time 13:00:00"] Time 13:00:00	[B6,n,0.54166666666667] 13:00:00
+[A7,s,"Date&Time 2015-09-25T13:00:00"] Date&Time 2015-09-25T13:00:00	[B7,n,42272.541666667] 2015-09-25 13:00:00
+[A8,s,"Currency \342\200\223 USD"] Currency – USD	[B8,n,1234.56] 1234.56
+[A9,s,"Currency \342\200\223 EUR"] Currency – EUR	[B9,n,1234.56] € 1234.56
+[A10,s,"Percent"] Percent	[B10,n,0.3] 0.3
+[A11,s,"Fraction"] Fraction	[B11,n,1.5] 1.5
+
+Reading excel5-test.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Websites
+    size:      A1:D8
+[A1,null,NULL] 	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 
+[A2,null,NULL] 	[B2,s,"Web sites data"] Web sites data	[C2,null,NULL] 	[D2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 
+[A4,s,"Title"] Title	[B4,s,"Url"] Url	[C4,s,"Visitors"] Visitors	[D4,s,"Accesses"] Accesses
+[A5,s,"Web Programming Courses"] Web Programming Courses	[B5,s,"http://coursesweb.net/"] http://coursesweb.net/	[C5,n,5000.0] 5000	[D5,n,9800.0] 9800
+[A6,s,"Courses Games and Anime"] Courses Games and Anime	[B6,s,"http://www.marplo.net/"] http://www.marplo.net/	[C6,n,6000.0] 6000	[D6,n,22000.0] 22000
+[A7,s,"PHP: Hypertext Processor"] PHP: Hypertext Processor	[B7,s,"http://php.net/"] http://php.net/	[C7,n,30000.0] 30000	[D7,n,92000.0] 92000
+[A8,s,"Yahoo!"] Yahoo!	[B8,s,"http://yahoo.com/"] http://yahoo.com/	[C8,n,100000.0] 100000	[D8,n,650000.0] 650000
+Worksheet
+    code name: Worksheet_1
+    title:     Fruits
+    size:      A1:E8
+[A1,null,NULL] 	[B1,s,"Fruits"] Fruits	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 
+[A2,null,NULL] 	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 
+[A3,s,"Name"] Name	[B3,s,"Potassium"] Potassium	[C3,s,"Calcium"] Calcium	[D3,s,"Magnesium"] Magnesium	[E3,s,"Vitamin B6"] Vitamin B6
+[A4,s,"Apple"] Apple	[B4,s,"195 mg"] 195 mg	[C4,s,"11 mg"] 11 mg	[D4,s,"9 mg"] 9 mg	[E4,s,"0.075 mg"] 0.075 mg
+[A5,s,"Banana"] Banana	[B5,s,"422 mg"] 422 mg	[C5,s,"6 mg"] 6 mg	[D5,s,"58 mg"] 58 mg	[E5,s,"0.517 mg"] 0.517 mg
+[A6,s,"Cherries "] Cherries 	[B6,s,"306 mg"] 306 mg	[C6,s,"18 mg"] 18 mg	[D6,s,"15 mg"] 15 mg	[E6,s,"0.068 mg"] 0.068 mg
+[A7,s,"Grapes "] Grapes 	[B7,s,"288 mg"] 288 mg	[C7,s,"15 mg"] 15 mg	[D7,s,"11 mg"] 11 mg	[E7,s,"0.13 mg"] 0.13 mg
+[A8,s,"Strawberry "] Strawberry 	[B8,s,"220 mg"] 220 mg	[C8,s,"23 mg"] 23 mg	[D8,s,"19 mg"] 19 mg	[E8,s,"0.068 mg"] 0.068 mg
+Worksheet
+    code name: Worksheet_2
+    title:     Vegetables
+    size:      A1:E8
+[A1,null,NULL] 	[B1,s,"Vegetables"] Vegetables	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 
+[A2,null,NULL] 	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 
+[A3,s,"Name"] Name	[B3,s,"Potassium"] Potassium	[C3,s,"Calcium"] Calcium	[D3,s,"Magnesium"] Magnesium	[E3,s,"Vitamin B6"] Vitamin B6
+[A4,s,"Cabbage "] Cabbage 	[B4,s,"147 mg"] 147 mg	[C4,s,"36 mg"] 36 mg	[D4,s,"11 mg"] 11 mg	[E4,s,"0.084 mg"] 0.084 mg
+[A5,s,"Mushroom "] Mushroom 	[B5,s,"111 mg"] 111 mg	[C5,s,"1 mg"] 1 mg	[D5,s,"3 mg"] 3 mg	[E5,s,"0.036 mg"] 0.036 mg
+[A6,s,"Onions "] Onions 	[B6,s,"100 mg"] 100 mg	[C6,s,"13 mg"] 13 mg	[D6,s,"7 mg"] 7 mg	[E6,s,"0.077 mg"] 0.077 mg
+[A7,s,"Potatoes "] Potatoes 	[B7,s,"926 mg"] 926 mg	[C7,s,"26 mg"] 26 mg	[D7,s,"48 mg"] 48 mg	[E7,s,"0.538 mg"] 0.538 mg
+[A8,s,"Pumpkin "] Pumpkin 	[B8,s,"564 mg"] 564 mg	[C8,s,"37 mg"] 37 mg	[D8,s,"22 mg"] 22 mg	[E8,s,"0.108 mg"] 0.108 mg
+
+Reading excel5-sample-1.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Data
+    size:      A1:L1745
+[A1,null,NULL] 	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,null,NULL] 	[J1,null,NULL] 	[K1,null,NULL] 	[L1,null,NULL] 
+[A2,s,"Stock Market Data Used in \"Irrational Exuberance\" Princeton University Press, 2000, 2005, 2015, upda[...]"] Stock Market Data Used in "Irrational Exuberance" Princeton University Press, 2000, 2005, 2015, updated	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,null,NULL] 	[J2,null,NULL] 	[K2,s,"Cyclically"] Cyclically	[L2,null,NULL] 
+[A3,s,"Robert J. Shiller"] Robert J. Shiller	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,null,NULL] 	[J3,null,NULL] 	[K3,s,"Adjusted"] Adjusted	[L3,null,NULL] 
+[A4,null,NULL] 	[B4,null,NULL] 	[C4,null,NULL] 	[D4,null,NULL] 	[E4,null,NULL] 	[F4,null,NULL] 	[G4,null,NULL] 	[H4,null,NULL] 	[I4,null,NULL] 	[J4,null,NULL] 	[K4,s,"Price"] Price	[L4,null,NULL] 
+[A5,null,NULL] 	[B5,null,NULL] 	[C5,null,NULL] 	[D5,null,NULL] 	[E5,s,"  Consumer"]   Consumer	[F5,null,NULL] 	[G5,null,NULL] 	[H5,null,NULL] 	[I5,null,NULL] 	[J5,null,NULL] 	[K5,s,"Earnings"] Earnings	[L5,null,NULL] 
+[A6,null,NULL] 	[B6,s,"S&P"] S&P	[C6,null,NULL] 	[D6,null,NULL] 	[E6,s,"Price"] Price	[F6,null,NULL] 	[G6,s,"Long"] Long	[H6,null,NULL] 	[I6,null,NULL] 	[J6,null,NULL] 	[K6,s,"Ratio"] Ratio	[L6,null,NULL] 
+[A7,null,NULL] 	[B7,s,"Comp."] Comp.	[C7,s,"Dividend"] Dividend	[D7,s,"Earnings"] Earnings	[E7,s,"Index"] Index	[F7,s,"Date  "] Date  	[G7,s,"Interest"] Interest	[H7,s,"Real"] Real	[I7,s,"Real"] Real	[J7,s,"Real"] Real	[K7,s,"P/E10 or"] P/E10 or	[L7,null,NULL] 
+[A8,s,"Date"] Date	[B8,s,"P"] P	[C8,s,"D"] D	[D8,s,"E"] E	[E8,s,"CPI"] CPI	[F8,s,"Fraction"] Fraction	[G8,s,"Rate GS10"] Rate GS10	[H8,s,"Price"] Price	[I8,s,"Dividend"] Dividend	[J8,s,"Earnings"] Earnings	[K8,s,"CAPE"] CAPE	[L8,null,NULL] 
+[A9,n,1871.01] 1871.01	[B9,n,4.44] 4.44	[C9,n,0.26] 0.26	[D9,n,0.4] 0.4	[E9,n,12.46406116] 12.46406116	[F9,null,NULL] 	[G9,n,5.32] 5.32	[H9,null,NULL] 	[I9,null,NULL] 	[J9,null,NULL] 	[K9,s,"NA"] NA	[L9,null,NULL] 
+[A10,n,1871.02] 1871.02	[B10,n,4.5] 4.5	[C10,n,0.26] 0.26	[D10,n,0.4] 0.4	[E10,n,12.84464132] 12.84464132	[F10,null,NULL] 	[G10,null,NULL] 	[H10,null,NULL] 	[I10,null,NULL] 	[J10,null,NULL] 	[K10,s,"NA"] NA	[L10,null,NULL] 
+[A11,n,1871.03] 1871.03	[B11,n,4.61] 4.61	[C11,n,0.26] 0.26	[D11,n,0.4] 0.4	[E11,n,13.0349719] 13.0349719	[F11,null,NULL] 	[G11,null,NULL] 	[H11,null,NULL] 	[I11,null,NULL] 	[J11,null,NULL] 	[K11,s,"NA"] NA	[L11,null,NULL] 
+[A12,n,1871.04] 1871.04	[B12,n,4.74] 4.74	[C12,n,0.26] 0.26	[D12,n,0.4] 0.4	[E12,n,12.55922645] 12.55922645	[F12,null,NULL] 	[G12,null,NULL] 	[H12,null,NULL] 	[I12,null,NULL] 	[J12,null,NULL] 	[K12,s,"NA"] NA	[L12,null,NULL] 
+[A13,n,1871.05] 1871.05	[B13,n,4.86] 4.86	[C13,n,0.26] 0.26	[D13,n,0.4] 0.4	[E13,n,12.27381157] 12.27381157	[F13,null,NULL] 	[G13,null,NULL] 	[H13,null,NULL] 	[I13,null,NULL] 	[J13,null,NULL] 	[K13,s,"NA"] NA	[L13,null,NULL] 
+[A14,n,1871.06] 1871.06	[B14,n,4.82] 4.82	[C14,n,0.26] 0.26	[D14,n,0.4] 0.4	[E14,n,12.08348099] 12.08348099	[F14,null,NULL] 	[G14,null,NULL] 	[H14,null,NULL] 	[I14,null,NULL] 	[J14,null,NULL] 	[K14,s,"NA"] NA	[L14,null,NULL] 
+[A15,n,1871.07] 1871.07	[B15,n,4.73] 4.73	[C15,n,0.26] 0.26	[D15,n,0.4] 0.4	[E15,n,12.08348099] 12.08348099	[F15,null,NULL] 	[G15,null,NULL] 	[H15,null,NULL] 	[I15,null,NULL] 	[J15,null,NULL] 	[K15,s,"NA"] NA	[L15,null,NULL] 
+[A16,n,1871.08] 1871.08	[B16,n,4.79] 4.79	[C16,n,0.26] 0.26	[D16,n,0.4] 0.4	[E16,n,11.8932314] 11.8932314	[F16,null,NULL] 	[G16,null,NULL] 	[H16,null,NULL] 	[I16,null,NULL] 	[J16,null,NULL] 	[K16,s,"NA"] NA	[L16,null,NULL] 
+[A17,n,1871.09] 1871.09	[B17,n,4.84] 4.84	[C17,n,0.26] 0.26	[D17,n,0.4] 0.4	[E17,n,12.17864628] 12.17864628	[F17,null,NULL] 	[G17,null,NULL] 	[H17,null,NULL] 	[I17,null,NULL] 	[J17,null,NULL] 	[K17,s,"NA"] NA	[L17,null,NULL] 
+[A18,n,1871.1] 1871.1	[B18,n,4.59] 4.59	[C18,n,0.26] 0.26	[D18,n,0.4] 0.4	[E18,n,12.36889587] 12.36889587	[F18,null,NULL] 	[G18,null,NULL] 	[H18,null,NULL] 	[I18,null,NULL] 	[J18,null,NULL] 	[K18,s,"NA"] NA	[L18,null,NULL] 
+[A19,n,1871.11] 1871.11	[B19,n,4.64] 4.64	[C19,n,0.26] 0.26	[D19,n,0.4] 0.4	[E19,n,12.36889587] 12.36889587	[F19,null,NULL] 	[G19,null,NULL] 	[H19,null,NULL] 	[I19,null,NULL] 	[J19,null,NULL] 	[K19,s,"NA"] NA	[L19,null,NULL] 
+[A20,n,1871.12] 1871.12	[B20,n,4.74] 4.74	[C20,n,0.26] 0.26	[D20,n,0.4] 0.4	[E20,n,12.65439174] 12.65439174	[F20,null,NULL] 	[G20,null,NULL] 	[H20,null,NULL] 	[I20,null,NULL] 	[J20,null,NULL] 	[K20,s,"NA"] NA	[L20,null,NULL] 
+[rows in range 21 to 1742 skipped]
+[A1743,n,2015.07] 2015.07	[B1743,n,2094.14] 2094.14	[C1743,null,NULL] 	[D1743,null,NULL] 	[E1743,n,238.654] 238.654	[F1743,null,NULL] 	[G1743,n,2.32] 2.32	[H1743,null,NULL] 	[I1743,null,NULL] 	[J1743,null,NULL] 	[K1743,null,NULL] 	[L1743,null,NULL] 
+[A1744,n,2015.08] 2015.08	[B1744,n,1988.87] 1988.87	[C1744,null,NULL] 	[D1744,null,NULL] 	[E1744,null,NULL] 	[F1744,null,NULL] 	[G1744,n,2.19] 2.19	[H1744,null,NULL] 	[I1744,null,NULL] 	[J1744,null,NULL] 	[K1744,null,NULL] 	[L1744,null,NULL] 
+[A1745,null,NULL] 	[B1745,s,"Aug 2015 P is Aug 28 close"] Aug 2015 P is Aug 28 close	[C1745,null,NULL] 	[D1745,null,NULL] 	[E1745,s,"Aug 2015 CPI estimated"] Aug 2015 CPI estimated	[F1745,null,NULL] 	[G1745,s,"Aug 2015 long rate is Aug 28 value"] Aug 2015 long rate is Aug 28 value	[H1745,null,NULL] 	[I1745,null,NULL] 	[J1745,null,NULL] 	[K1745,null,NULL] 	[L1745,null,NULL] 
+
+Reading excel5-climate_data.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:O22
+[A1,null,NULL] 	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,null,NULL] 	[J1,null,NULL] 	[K1,null,NULL] 	[L1,null,NULL] 	[M1,null,NULL] 	[N1,null,NULL] 	[O1,null,NULL] 
+[A2,null,NULL] 	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,null,NULL] 	[J2,s,"Data to Plot"] Data to Plot	[K2,null,NULL] 	[L2,null,NULL] 	[M2,null,NULL] 	[N2,null,NULL] 	[O2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,null,NULL] 	[J3,null,NULL] 	[K3,null,NULL] 	[L3,null,NULL] 	[M3,null,NULL] 	[N3,null,NULL] 	[O3,n,1] 1
+[A4,null,NULL] 	[B4,null,NULL] 	[C4,null,NULL] 	[D4,null,NULL] 	[E4,null,NULL] 	[F4,null,NULL] 	[G4,null,NULL] 	[H4,null,NULL] 	[I4,null,NULL] 	[J4,null,NULL] 	[K4,null,NULL] 	[L4,null,NULL] 	[M4,null,NULL] 	[N4,null,NULL] 	[O4,null,NULL] 
+[A5,null,NULL] 	[B5,null,NULL] 	[C5,null,NULL] 	[D5,null,NULL] 	[E5,null,NULL] 	[F5,null,NULL] 	[G5,null,NULL] 	[H5,null,NULL] 	[I5,null,NULL] 	[J5,null,NULL] 	[K5,null,NULL] 	[L5,null,NULL] 	[M5,null,NULL] 	[N5,null,NULL] 	[O5,null,NULL] 
+[A6,null,NULL] 	[B6,null,NULL] 	[C6,null,NULL] 	[D6,null,NULL] 	[E6,null,NULL] 	[F6,null,NULL] 	[G6,null,NULL] 	[H6,null,NULL] 	[I6,null,NULL] 	[J6,null,NULL] 	[K6,null,NULL] 	[L6,null,NULL] 	[M6,null,NULL] 	[N6,null,NULL] 	[O6,null,NULL] 
+[A7,null,NULL] 	[B7,null,NULL] 	[C7,null,NULL] 	[D7,null,NULL] 	[E7,null,NULL] 	[F7,null,NULL] 	[G7,null,NULL] 	[H7,null,NULL] 	[I7,null,NULL] 	[J7,null,NULL] 	[K7,null,NULL] 	[L7,null,NULL] 	[M7,null,NULL] 	[N7,null,NULL] 	[O7,null,NULL] 
+[A8,null,NULL] 	[B8,null,NULL] 	[C8,null,NULL] 	[D8,null,NULL] 	[E8,null,NULL] 	[F8,null,NULL] 	[G8,null,NULL] 	[H8,null,NULL] 	[I8,null,NULL] 	[J8,null,NULL] 	[K8,null,NULL] 	[L8,null,NULL] 	[M8,null,NULL] 	[N8,null,NULL] 	[O8,null,NULL] 
+[A9,null,NULL] 	[B9,null,NULL] 	[C9,null,NULL] 	[D9,null,NULL] 	[E9,null,NULL] 	[F9,null,NULL] 	[G9,null,NULL] 	[H9,null,NULL] 	[I9,null,NULL] 	[J9,null,NULL] 	[K9,null,NULL] 	[L9,null,NULL] 	[M9,null,NULL] 	[N9,null,NULL] 	[O9,null,NULL] 
+[A10,null,NULL] 	[B10,null,NULL] 	[C10,null,NULL] 	[D10,null,NULL] 	[E10,null,NULL] 	[F10,null,NULL] 	[G10,null,NULL] 	[H10,null,NULL] 	[I10,null,NULL] 	[J10,s,"Select the cities"] Select the cities	[K10,null,NULL] 	[L10,null,NULL] 	[M10,null,NULL] 	[N10,null,NULL] 	[O10,null,NULL] 
+[A11,null,NULL] 	[B11,null,NULL] 	[C11,null,NULL] 	[D11,null,NULL] 	[E11,null,NULL] 	[F11,null,NULL] 	[G11,null,NULL] 	[H11,null,NULL] 	[I11,null,NULL] 	[J11,s,"FARGO, ND"] FARGO, ND	[K11,null,NULL] 	[L11,null,NULL] 	[M11,null,NULL] 	[N11,null,NULL] 	[O11,null,NULL] 
+[A12,null,NULL] 	[B12,null,NULL] 	[C12,null,NULL] 	[D12,null,NULL] 	[E12,null,NULL] 	[F12,null,NULL] 	[G12,null,NULL] 	[H12,null,NULL] 	[I12,null,NULL] 	[J12,null,NULL] 	[K12,null,NULL] 	[L12,null,NULL] 	[M12,null,NULL] 	[N12,null,NULL] 	[O12,null,NULL] 
+[A13,null,NULL] 	[B13,null,NULL] 	[C13,null,NULL] 	[D13,null,NULL] 	[E13,null,NULL] 	[F13,null,NULL] 	[G13,null,NULL] 	[H13,null,NULL] 	[I13,null,NULL] 	[J13,s,"HONOLULU,HI"] HONOLULU,HI	[K13,null,NULL] 	[L13,null,NULL] 	[M13,null,NULL] 	[N13,null,NULL] 	[O13,null,NULL] 
+[A14,null,NULL] 	[B14,null,NULL] 	[C14,null,NULL] 	[D14,null,NULL] 	[E14,null,NULL] 	[F14,null,NULL] 	[G14,null,NULL] 	[H14,null,NULL] 	[I14,null,NULL] 	[J14,null,NULL] 	[K14,null,NULL] 	[L14,null,NULL] 	[M14,null,NULL] 	[N14,null,NULL] 	[O14,null,NULL] 
+[A15,null,NULL] 	[B15,null,NULL] 	[C15,null,NULL] 	[D15,null,NULL] 	[E15,null,NULL] 	[F15,null,NULL] 	[G15,null,NULL] 	[H15,null,NULL] 	[I15,null,NULL] 	[J15,null,NULL] 	[K15,null,NULL] 	[L15,null,NULL] 	[M15,null,NULL] 	[N15,null,NULL] 	[O15,null,NULL] 
+[A16,null,NULL] 	[B16,null,NULL] 	[C16,null,NULL] 	[D16,null,NULL] 	[E16,null,NULL] 	[F16,null,NULL] 	[G16,null,NULL] 	[H16,null,NULL] 	[I16,null,NULL] 	[J16,null,NULL] 	[K16,null,NULL] 	[L16,null,NULL] 	[M16,null,NULL] 	[N16,null,NULL] 	[O16,null,NULL] 
+[A17,null,NULL] 	[B17,null,NULL] 	[C17,null,NULL] 	[D17,null,NULL] 	[E17,null,NULL] 	[F17,null,NULL] 	[G17,null,NULL] 	[H17,null,NULL] 	[I17,null,NULL] 	[J17,null,NULL] 	[K17,null,NULL] 	[L17,null,NULL] 	[M17,null,NULL] 	[N17,null,NULL] 	[O17,null,NULL] 
+[A18,null,NULL] 	[B18,null,NULL] 	[C18,null,NULL] 	[D18,null,NULL] 	[E18,null,NULL] 	[F18,null,NULL] 	[G18,null,NULL] 	[H18,null,NULL] 	[I18,null,NULL] 	[J18,null,NULL] 	[K18,null,NULL] 	[L18,null,NULL] 	[M18,null,NULL] 	[N18,null,NULL] 	[O18,null,NULL] 
+[A19,null,NULL] 	[B19,null,NULL] 	[C19,null,NULL] 	[D19,null,NULL] 	[E19,null,NULL] 	[F19,null,NULL] 	[G19,null,NULL] 	[H19,null,NULL] 	[I19,null,NULL] 	[J19,null,NULL] 	[K19,null,NULL] 	[L19,null,NULL] 	[M19,null,NULL] 	[N19,null,NULL] 	[O19,null,NULL] 
+[A20,null,NULL] 	[B20,null,NULL] 	[C20,null,NULL] 	[D20,null,NULL] 	[E20,null,NULL] 	[F20,null,NULL] 	[G20,null,NULL] 	[H20,null,NULL] 	[I20,null,NULL] 	[J20,null,NULL] 	[K20,null,NULL] 	[L20,null,NULL] 	[M20,null,NULL] 	[N20,null,NULL] 	[O20,null,NULL] 
+[A21,null,NULL] 	[B21,null,NULL] 	[C21,null,NULL] 	[D21,null,NULL] 	[E21,null,NULL] 	[F21,null,NULL] 	[G21,null,NULL] 	[H21,null,NULL] 	[I21,null,NULL] 	[J21,null,NULL] 	[K21,null,NULL] 	[L21,null,NULL] 	[M21,null,NULL] 	[N21,null,NULL] 	[O21,null,NULL] 
+[A22,null,NULL] 	[B22,s,"Jan"] Jan	[C22,s,"Feb"] Feb	[D22,s,"Mar"] Mar	[E22,s,"Apr"] Apr	[F22,s,"May"] May	[G22,s,"Jun"] Jun	[H22,s,"Jul"] Jul	[I22,s,"Aug"] Aug	[J22,s,"Sep"] Sep	[K22,s,"Oct"] Oct	[L22,s,"Nov"] Nov	[M22,s,"Dec"] Dec	[N22,null,NULL] 	[O22,null,NULL] 
+Worksheet
+    code name: Worksheet_1
+    title:     Data
+    size:      A1:M1040
+[A1,s,"This sheet has four data tables, named PrecipitationData, TemperatureData, SunshineData, and WindDat[...]"] This sheet has four data tables, named PrecipitationData, TemperatureData, SunshineData, and WindData	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,null,NULL] 	[J1,null,NULL] 	[K1,null,NULL] 	[L1,null,NULL] 	[M1,null,NULL] 
+[A2,s,"Source: National Climatic Data Center"] Source: National Climatic Data Center	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,null,NULL] 	[J2,null,NULL] 	[K2,null,NULL] 	[L2,null,NULL] 	[M2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,null,NULL] 	[J3,null,NULL] 	[K3,null,NULL] 	[L3,null,NULL] 	[M3,null,NULL] 
+[A4,s,"Normal Monthly Precipitation (Inches)"] Normal Monthly Precipitation (Inches)	[B4,null,NULL] 	[C4,null,NULL] 	[D4,null,NULL] 	[E4,null,NULL] 	[F4,null,NULL] 	[G4,null,NULL] 	[H4,null,NULL] 	[I4,null,NULL] 	[J4,null,NULL] 	[K4,null,NULL] 	[L4,null,NULL] 	[M4,null,NULL] 
+[A5,s,"NORMALS 1971-2000 "] NORMALS 1971-2000 	[B5,null,NULL] 	[C5,null,NULL] 	[D5,null,NULL] 	[E5,null,NULL] 	[F5,null,NULL] 	[G5,null,NULL] 	[H5,null,NULL] 	[I5,null,NULL] 	[J5,null,NULL] 	[K5,null,NULL] 	[L5,null,NULL] 	[M5,null,NULL] 
+[A6,null,NULL] 	[B6,null,NULL] 	[C6,null,NULL] 	[D6,null,NULL] 	[E6,null,NULL] 	[F6,null,NULL] 	[G6,null,NULL] 	[H6,null,NULL] 	[I6,null,NULL] 	[J6,null,NULL] 	[K6,null,NULL] 	[L6,null,NULL] 	[M6,null,NULL] 
+[A7,s,"284 CITIES"] 284 CITIES	[B7,s,"JAN"] JAN	[C7,s,"FEB"] FEB	[D7,s,"MAR"] MAR	[E7,s,"APR"] APR	[F7,s,"MAY"] MAY	[G7,s,"JUN"] JUN	[H7,s,"JUL"] JUL	[I7,s,"AUG"] AUG	[J7,s,"SEP"] SEP	[K7,s,"OCT"] OCT	[L7,s,"NOV"] NOV	[M7,s,"DEC"] DEC
+[A8,s,"ABERDEEN, SD"] ABERDEEN, SD	[B8,n,0.48] 0.48	[C8,n,0.48] 0.48	[D8,n,1.34] 1.34	[E8,n,1.83] 1.83	[F8,n,2.69] 2.69	[G8,n,3.49] 3.49	[H8,n,2.92] 2.92	[I8,n,2.42] 2.42	[J8,n,1.81] 1.81	[K8,n,1.63] 1.63	[L8,n,0.75] 0.75	[M8,n,0.38] 0.38
+[A9,s,"ABILENE, TX"] ABILENE, TX	[B9,n,0.97] 0.97	[C9,n,1.13] 1.13	[D9,n,1.41] 1.41	[E9,n,1.67] 1.67	[F9,n,2.83] 2.83	[G9,n,3.06] 3.06	[H9,n,1.69] 1.69	[I9,n,2.63] 2.63	[J9,n,2.91] 2.91	[K9,n,2.9] 2.9	[L9,n,1.3] 1.3	[M9,n,1.27] 1.27
+[A10,s,"AKRON, OH"] AKRON, OH	[B10,n,2.49] 2.49	[C10,n,2.28] 2.28	[D10,n,3.15] 3.15	[E10,n,3.39] 3.39	[F10,n,3.96] 3.96	[G10,n,3.55] 3.55	[H10,n,4.02] 4.02	[I10,n,3.65] 3.65	[J10,n,3.43] 3.43	[K10,n,2.53] 2.53	[L10,n,3.04] 3.04	[M10,n,2.98] 2.98
+[A11,s,"ALAMOSA, CO"] ALAMOSA, CO	[B11,n,0.25] 0.25	[C11,n,0.21] 0.21	[D11,n,0.46] 0.46	[E11,n,0.54] 0.54	[F11,n,0.7] 0.7	[G11,n,0.59] 0.59	[H11,n,0.94] 0.94	[I11,n,1.19] 1.19	[J11,n,0.89] 0.89	[K11,n,0.67] 0.67	[L11,n,0.48] 0.48	[M11,n,0.33] 0.33
+[A12,s,"ALBANY, NY"] ALBANY, NY	[B12,n,2.71] 2.71	[C12,n,2.27] 2.27	[D12,n,3.17] 3.17	[E12,n,3.25] 3.25	[F12,n,3.67] 3.67	[G12,n,3.74] 3.74	[H12,n,3.5] 3.5	[I12,n,3.68] 3.68	[J12,n,3.31] 3.31	[K12,n,3.23] 3.23	[L12,n,3.31] 3.31	[M12,n,2.76] 2.76
+[A13,s,"ALBUQUERQUE, NM"] ALBUQUERQUE, NM	[B13,n,0.49] 0.49	[C13,n,0.44] 0.44	[D13,n,0.61] 0.61	[E13,n,0.5] 0.5	[F13,n,0.6] 0.6	[G13,n,0.65] 0.65	[H13,n,1.27] 1.27	[I13,n,1.73] 1.73	[J13,n,1.07] 1.07	[K13,n,1] 1	[L13,n,0.62] 0.62	[M13,n,0.49] 0.49
+[A14,s,"ALLENTOWN, PA"] ALLENTOWN, PA	[B14,n,3.5] 3.5	[C14,n,2.75] 2.75	[D14,n,3.56] 3.56	[E14,n,3.49] 3.49	[F14,n,4.47] 4.47	[G14,n,3.99] 3.99	[H14,n,4.27] 4.27	[I14,n,4.35] 4.35	[J14,n,4.37] 4.37	[K14,n,3.33] 3.33	[L14,n,3.7] 3.7	[M14,n,3.39] 3.39
+[A15,s,"ALPENA, MI"] ALPENA, MI	[B15,n,1.76] 1.76	[C15,n,1.35] 1.35	[D15,n,2.13] 2.13	[E15,n,2.31] 2.31	[F15,n,2.61] 2.61	[G15,n,2.53] 2.53	[H15,n,3.17] 3.17	[I15,n,3.5] 3.5	[J15,n,2.8] 2.8	[K15,n,2.33] 2.33	[L15,n,2.08] 2.08	[M15,n,1.83] 1.83
+[A16,s,"AMARILLO, TX"] AMARILLO, TX	[B16,n,0.63] 0.63	[C16,n,0.55] 0.55	[D16,n,1.13] 1.13	[E16,n,1.33] 1.33	[F16,n,2.5] 2.5	[G16,n,3.28] 3.28	[H16,n,2.68] 2.68	[I16,n,2.94] 2.94	[J16,n,1.88] 1.88	[K16,n,1.5] 1.5	[L16,n,0.68] 0.68	[M16,n,0.61] 0.61
+[A17,s,"ANCHORAGE, AK"] ANCHORAGE, AK	[B17,n,0.68] 0.68	[C17,n,0.74] 0.74	[D17,n,0.65] 0.65	[E17,n,0.52] 0.52	[F17,n,0.69] 0.69	[G17,n,1.06] 1.06	[H17,n,1.7] 1.7	[I17,n,2.93] 2.93	[J17,n,2.87] 2.87	[K17,n,2.08] 2.08	[L17,n,1.09] 1.09	[M17,n,1.05] 1.05
+[A18,s,"ANNETTE, AK"] ANNETTE, AK	[B18,n,9.67] 9.67	[C18,n,8.05] 8.05	[D18,n,7.96] 7.96	[E18,n,7.37] 7.37	[F18,n,5.73] 5.73	[G18,n,4.72] 4.72	[H18,n,4.26] 4.26	[I18,n,6.12] 6.12	[J18,n,9.49] 9.49	[K18,n,13.86] 13.86	[L18,n,12.21] 12.21	[M18,n,11.39] 11.39
+[A19,s,"APALACHICOLA, FL"] APALACHICOLA, FL	[B19,n,4.87] 4.87	[C19,n,3.76] 3.76	[D19,n,4.95] 4.95	[E19,n,3] 3	[F19,n,2.62] 2.62	[G19,n,4.3] 4.3	[H19,n,7.31] 7.31	[I19,n,7.29] 7.29	[J19,n,7.1] 7.1	[K19,n,4.18] 4.18	[L19,n,3.62] 3.62	[M19,n,3.51] 3.51
+[A20,s,"ASHEVILLE, NC"] ASHEVILLE, NC	[B20,n,4.06] 4.06	[C20,n,3.83] 3.83	[D20,n,4.59] 4.59	[E20,n,3.5] 3.5	[F20,n,4.41] 4.41	[G20,n,4.38] 4.38	[H20,n,3.87] 3.87	[I20,n,4.3] 4.3	[J20,n,3.72] 3.72	[K20,n,3.17] 3.17	[L20,n,3.82] 3.82	[M20,n,3.39] 3.39
+[rows in range 21 to 1037 skipped]
+[A1038,s,"YAP, W CAROLINE IS., PC"] YAP, W CAROLINE IS., PC	[B1038,n,9.6] 9.6	[C1038,n,10.2] 10.2	[D1038,n,9.7] 9.7	[E1038,n,8.9] 8.9	[F1038,n,7.8] 7.8	[G1038,n,6.9] 6.9	[H1038,n,6.5] 6.5	[I1038,n,6.8] 6.8	[J1038,n,6.8] 6.8	[K1038,n,6.4] 6.4	[L1038,n,7.4] 7.4	[M1038,n,8.8] 8.8
+[A1039,s,"YOUNGSTOWN, OH"] YOUNGSTOWN, OH	[B1039,n,11.4] 11.4	[C1039,n,11.1] 11.1	[D1039,n,11.3] 11.3	[E1039,n,10.8] 10.8	[F1039,n,9.4] 9.4	[G1039,n,8.4] 8.4	[H1039,n,7.7] 7.7	[I1039,n,7.4] 7.4	[J1039,n,8.1] 8.1	[K1039,n,9.2] 9.2	[L1039,n,10.8] 10.8	[M1039,n,11.1] 11.1
+[A1040,s,"YUMA, AZ"] YUMA, AZ	[B1040,n,7.3] 7.3	[C1040,n,7.4] 7.4	[D1040,n,7.9] 7.9	[E1040,n,8.3] 8.3	[F1040,n,8.3] 8.3	[G1040,n,8.5] 8.5	[H1040,n,9.5] 9.5	[I1040,n,8.9] 8.9	[J1040,n,7.3] 7.3	[K1040,n,6.6] 6.6	[L1040,n,6.9] 6.9	[M1040,n,7.2] 7.2
+
+Reading excel5-SampleData.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     SalesOrders
+    size:      A1:G44
+[A1,s,"OrderDate"] OrderDate	[B1,s,"Region"] Region	[C1,s,"Rep"] Rep	[D1,s,"Item"] Item	[E1,s,"Units"] Units	[F1,s,"Unit Cost"] Unit Cost	[G1,s,"Total"] Total
+[A2,n,41645] 2014-01-06	[B2,s,"East"] East	[C2,s,"Jones"] Jones	[D2,s,"Pencil"] Pencil	[E2,n,95] 95	[F2,n,1.99] 1.99	[G2,null,NULL] 
+[A3,n,41662] 2014-01-23	[B3,s,"Central"] Central	[C3,s,"Kivell"] Kivell	[D3,s,"Binder"] Binder	[E3,n,50] 50	[F3,n,19.99] 19.99	[G3,null,NULL] 
+[A4,n,41679] 2014-02-09	[B4,s,"Central"] Central	[C4,s,"Jardine"] Jardine	[D4,s,"Pencil"] Pencil	[E4,n,36] 36	[F4,n,4.99] 4.99	[G4,null,NULL] 
+[A5,n,41696] 2014-02-26	[B5,s,"Central"] Central	[C5,s,"Gill"] Gill	[D5,s,"Pen"] Pen	[E5,n,27] 27	[F5,n,19.99] 19.99	[G5,null,NULL] 
+[A6,n,41713] 2014-03-15	[B6,s,"West"] West	[C6,s,"Sorvino"] Sorvino	[D6,s,"Pencil"] Pencil	[E6,n,56] 56	[F6,n,2.99] 2.99	[G6,null,NULL] 
+[A7,n,41730] 2014-04-01	[B7,s,"East"] East	[C7,s,"Jones"] Jones	[D7,s,"Binder"] Binder	[E7,n,60] 60	[F7,n,4.99] 4.99	[G7,null,NULL] 
+[A8,n,41747] 2014-04-18	[B8,s,"Central"] Central	[C8,s,"Andrews"] Andrews	[D8,s,"Pencil"] Pencil	[E8,n,75] 75	[F8,n,1.99] 1.99	[G8,null,NULL] 
+[A9,n,41764] 2014-05-05	[B9,s,"Central"] Central	[C9,s,"Jardine"] Jardine	[D9,s,"Pencil"] Pencil	[E9,n,90] 90	[F9,n,4.99] 4.99	[G9,null,NULL] 
+[A10,n,41781] 2014-05-22	[B10,s,"West"] West	[C10,s,"Thompson"] Thompson	[D10,s,"Pencil"] Pencil	[E10,n,32] 32	[F10,n,1.99] 1.99	[G10,null,NULL] 
+[A11,n,41798] 2014-06-08	[B11,s,"East"] East	[C11,s,"Jones"] Jones	[D11,s,"Binder"] Binder	[E11,n,60] 60	[F11,n,8.99] 8.99	[G11,null,NULL] 
+[A12,n,41815] 2014-06-25	[B12,s,"Central"] Central	[C12,s,"Morgan"] Morgan	[D12,s,"Pencil"] Pencil	[E12,n,90] 90	[F12,n,4.99] 4.99	[G12,null,NULL] 
+[A13,n,41832] 2014-07-12	[B13,s,"East"] East	[C13,s,"Howard"] Howard	[D13,s,"Binder"] Binder	[E13,n,29] 29	[F13,n,1.99] 1.99	[G13,null,NULL] 
+[A14,n,41849] 2014-07-29	[B14,s,"East"] East	[C14,s,"Parent"] Parent	[D14,s,"Binder"] Binder	[E14,n,81] 81	[F14,n,19.99] 19.99	[G14,null,NULL] 
+[A15,n,41866] 2014-08-15	[B15,s,"East"] East	[C15,s,"Jones"] Jones	[D15,s,"Pencil"] Pencil	[E15,n,35] 35	[F15,n,4.99] 4.99	[G15,null,NULL] 
+[A16,n,41883] 2014-09-01	[B16,s,"Central"] Central	[C16,s,"Smith"] Smith	[D16,s,"Desk"] Desk	[E16,n,2] 2	[F16,n,125] 125	[G16,null,NULL] 
+[A17,n,41900] 2014-09-18	[B17,s,"East"] East	[C17,s,"Jones"] Jones	[D17,s,"Pen Set"] Pen Set	[E17,n,16] 16	[F17,n,15.99] 15.99	[G17,null,NULL] 
+[A18,n,41917] 2014-10-05	[B18,s,"Central"] Central	[C18,s,"Morgan"] Morgan	[D18,s,"Binder"] Binder	[E18,n,28] 28	[F18,n,8.99] 8.99	[G18,null,NULL] 
+[A19,n,41934] 2014-10-22	[B19,s,"East"] East	[C19,s,"Jones"] Jones	[D19,s,"Pen"] Pen	[E19,n,64] 64	[F19,n,8.99] 8.99	[G19,null,NULL] 
+[A20,n,41951] 2014-11-08	[B20,s,"East"] East	[C20,s,"Parent"] Parent	[D20,s,"Pen"] Pen	[E20,n,15] 15	[F20,n,19.99] 19.99	[G20,null,NULL] 
+[rows in range 21 to 41 skipped]
+[A42,n,42325] 2015-11-17	[B42,s,"Central"] Central	[C42,s,"Jardine"] Jardine	[D42,s,"Binder"] Binder	[E42,n,11] 11	[F42,n,4.99] 4.99	[G42,null,NULL] 
+[A43,n,42342] 2015-12-04	[B43,s,"Central"] Central	[C43,s,"Jardine"] Jardine	[D43,s,"Binder"] Binder	[E43,n,94] 94	[F43,n,19.99] 19.99	[G43,null,NULL] 
+[A44,n,42359] 2015-12-21	[B44,s,"Central"] Central	[C44,s,"Andrews"] Andrews	[D44,s,"Binder"] Binder	[E44,n,28] 28	[F44,n,4.99] 4.99	[G44,null,NULL] 
+Worksheet
+    code name: Worksheet_1
+    title:     MyLinks
+    size:      A1:D26
+[A1,null,NULL] 	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 
+[A2,null,NULL] 	[B2,s,"Contextures Products"] Contextures Products	[C2,null,NULL] 	[D2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 
+[A4,null,NULL] 	[B4,s,"PivotPower Premium Add-in"] PivotPower Premium Add-in	[C4,s,"Time-saving tools for pivot table power users"] Time-saving tools for pivot table power users	[D4,null,NULL] 
+[A5,null,NULL] 	[B5,s,"UserForms for Data Entry ebook Kit"] UserForms for Data Entry ebook Kit	[C5,s,"Step by step instructions and videos"] Step by step instructions and videos	[D5,null,NULL] 
+[A6,null,NULL] 	[B6,s,"Contextures Excel Tools Add-in"] Contextures Excel Tools Add-in	[C6,s,"Make instant backups, sort sheets, and many more tools"] Make instant backups, sort sheets, and many more tools	[D6,null,NULL] 
+[A7,null,NULL] 	[B7,s,"Data Validation Multi-Select Premium Kit"] Data Validation Multi-Select Premium Kit	[C7,s,"Select multiple items from a listbox, to enter in a single cell"] Select multiple items from a listbox, to enter in a single cell	[D7,null,NULL] 
+[A8,null,NULL] 	[B8,s,"30 Excel Functions in 30 Days eBook Kit"] 30 Excel Functions in 30 Days eBook Kit	[C8,s,"Sample workbook and easy to follow user guide for key Excel functions"] Sample workbook and easy to follow user guide for key Excel functions	[D8,null,NULL] 
+[A9,null,NULL] 	[B9,null,NULL] 	[C9,null,NULL] 	[D9,null,NULL] 
+[A10,null,NULL] 	[B10,s,"Contextures Recommends"] Contextures Recommends	[C10,null,NULL] 	[D10,null,NULL] 
+[A11,null,NULL] 	[B11,null,NULL] 	[C11,null,NULL] 	[D11,null,NULL] 
+[A12,null,NULL] 	[B12,s,"Jon Peltier's Excel Chart Utilities"] Jon Peltier's Excel Chart Utilities	[C12,s,"Create complex charts with just a few clicks"] Create complex charts with just a few clicks	[D12,null,NULL] 
+[A13,null,NULL] 	[B13,s,"ExcelUser Dashboards"] ExcelUser Dashboards	[C13,s,"Templates and instructions for impressive dashboards"] Templates and instructions for impressive dashboards	[D13,null,NULL] 
+[A14,null,NULL] 	[B14,s,"Xtreme Pivot Table Course"] Xtreme Pivot Table Course	[C14,s,"Video training from beginner to advanced topics"] Video training from beginner to advanced topics	[D14,null,NULL] 
+[A15,null,NULL] 	[B15,s,"Power Pivot University"] Power Pivot University	[C15,s,"Online course by Power Pivot expert Rob Collie"] Online course by Power Pivot expert Rob Collie	[D15,null,NULL] 
+[A16,null,NULL] 	[B16,s,"Excel Courses Online"] Excel Courses Online	[C16,s,"Excel training by Mynda Treacy"] Excel training by Mynda Treacy	[D16,null,NULL] 
+[A17,null,NULL] 	[B17,s,"Chandoo's Excel VBA School"] Chandoo's Excel VBA School	[C17,s,"Become awesome in Excel VBA with Chandoo's online training"] Become awesome in Excel VBA with Chandoo's online training	[D17,null,NULL] 
+[A18,null,NULL] 	[B18,s,"Chandoo's Project Management Templates"] Chandoo's Project Management Templates	[C18,s,"Save time with Chandoo's templates for project management"] Save time with Chandoo's templates for project management	[D18,null,NULL] 
+[A19,null,NULL] 	[B19,null,NULL] 	[C19,null,NULL] 	[D19,null,NULL] 
+[A20,null,NULL] 	[B20,s,"Contextures Sites & News"] Contextures Sites & News	[C20,null,NULL] 	[D20,null,NULL] 
+[A21,null,NULL] 	[B21,null,NULL] 	[C21,null,NULL] 	[D21,null,NULL] 
+[A22,null,NULL] 	[B22,s,"Contextures Excel Newsletter"] Contextures Excel Newsletter	[C22,s,"Weekly Excel tips, tutorials, videos, and news"] Weekly Excel tips, tutorials, videos, and news	[D22,null,NULL] 
+[A23,null,NULL] 	[B23,s,"Contextures Excel Tips Website"] Contextures Excel Tips Website	[C23,s,"Hundreds of tutorials, tips and sample files"] Hundreds of tutorials, tips and sample files	[D23,null,NULL] 
+[A24,null,NULL] 	[B24,s,"Contextures Excel Blog"] Contextures Excel Blog	[C24,s,"Read the Excel tutorials and share your comments"] Read the Excel tutorials and share your comments	[D24,null,NULL] 
+[A25,null,NULL] 	[B25,s,"Excel Pivot Tables Blog"] Excel Pivot Tables Blog	[C25,s,"Pivot table tutorials and tips, with comments and questions"] Pivot table tutorials and tips, with comments and questions	[D25,null,NULL] 
+[A26,null,NULL] 	[B26,s,"Debra's Pivot Table Books on Amazon"] Debra's Pivot Table Books on Amazon	[C26,s,"Pivot table books for Excel 2007"] Pivot table books for Excel 2007	[D26,null,NULL] 
+
+Reading excel5-rich-text.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:A1
+[A1,s,"Proviamo il RichText, anche se non so cosa vuol dire."] Proviamo il RichText, anche se non so cosa vuol dire.
+
+Reading excel5-sample.xls:
+using reader: com\github\phpoffice\phpexcelreader\Excel5Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Test Page
+    size:      A1:C6
+[A1,null,NULL] 	[B1,null,NULL] 	[C1,null,NULL] 
+[A2,null,NULL] 	[B2,null,NULL] 	[C2,s,"Sample Excel Worksheet"] Sample Excel Worksheet
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,s,"Created with Microsoft Excel 2003 SP1"] Created with Microsoft Excel 2003 SP1
+[A4,null,NULL] 	[B4,null,NULL] 	[C4,null,NULL] 
+[A5,null,NULL] 	[B5,null,NULL] 	[C5,null,NULL] 
+[A6,null,NULL] 	[B6,s,"X"] X	[C6,s,"Y"] Y
+
+Reading empty-file.xml:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,null,NULL] 
+
+Reading binary-file.xml:
+None of the available readers can read binary-file.xml: 
+com\github\phpoffice\phpexcelreader\Excel2003XMLReader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel5Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2007Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\OOCalcReader: Cannot read.
+com\github\phpoffice\phpexcelreader\CSVReader: Cannot read.
+
+Reading excel2003xml-example-alltypes.xml:
+using reader: com\github\phpoffice\phpexcelreader\Excel2003XMLReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:B11
+[A1,s,"Bool FALSE"] Bool FALSE	[B1,b,FALSE] FALSE
+[A2,s,"Bool TRUE"] Bool TRUE	[B2,b,TRUE] TRUE
+[A3,s,"Int"] Int	[B3,n,1234] 1234
+[A4,s,"Float"] Float	[B4,n,12.34] 12.34
+[A5,s,"Date 2015-09-25"] Date 2015-09-25	[B5,n,42272.0] 2015-09-25
+[A6,s,"Time 13:00:00"] Time 13:00:00	[B6,n,0.54166666666667] 13:00:00
+[A7,s,"Date&Time 2015-09-25T13:00:00"] Date&Time 2015-09-25T13:00:00	[B7,n,42272.541666667] 2015-09-25 13:00:00
+[A8,s,"Currency \342\200\223 USD"] Currency – USD	[B8,n,1234.56] ? 1234.56
+[A9,s,"Currency \342\200\223 EUR"] Currency – EUR	[B9,n,1234.56] € 1234.56
+[A10,s,"Percent"] Percent	[B10,n,0.3] 0.3
+[A11,s,"Fraction"] Fraction	[B11,n,1.5] 1.5
+
+Reading empty-file.xlsx:
+using reader: com\github\phpoffice\phpexcelreader\CSVReader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Worksheet
+    size:      A1:A1
+[A1,null,NULL] 
+
+Reading binary-file.xlsx:
+None of the available readers can read binary-file.xlsx: 
+com\github\phpoffice\phpexcelreader\Excel2007Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel5Reader: Cannot read.
+com\github\phpoffice\phpexcelreader\Excel2003XMLReader: Cannot read.
+com\github\phpoffice\phpexcelreader\OOCalcReader: Cannot read.
+com\github\phpoffice\phpexcelreader\CSVReader: Cannot read.
+
+Reading excel2007-example-alltypes.xlsx:
+using reader: com\github\phpoffice\phpexcelreader\Excel2007Reader
+Workbook:
+
+Worksheet
+    code name: Worksheet
+    title:     Sheet1
+    size:      A1:B11
+[A1,s,"Bool FALSE"] Bool FALSE	[B1,b,FALSE] FALSE
+[A2,s,"Bool TRUE"] Bool TRUE	[B2,b,TRUE] TRUE
+[A3,s,"Int"] Int	[B3,n,1234] 1234
+[A4,s,"Float"] Float	[B4,n,12.34] 12.34
+[A5,s,"Date 2015-09-25"] Date 2015-09-25	[B5,n,42272] 2015-09-25
+[A6,s,"Time 13:00:00"] Time 13:00:00	[B6,n,0.54166666666667] 13:00:00
+[A7,s,"Date&Time 2015-09-25T13:00:00"] Date&Time 2015-09-25T13:00:00	[B7,n,42272.541666667] 2015-09-25 13:00:00
+[A8,s,"Currency \342\200\223 USD"] Currency – USD	[B8,n,1234.56] 1234.56
+[A9,s,"Currency \342\200\223 EUR"] Currency – EUR	[B9,n,1234.56] € 1234.56
+[A10,s,"Percent"] Percent	[B10,n,0.3] 0.3
+[A11,s,"Fraction"] Fraction	[B11,n,1.5] 1.5
+
+Reading excel2007-amazon_referrals_2009.xlsx:
+using reader: com\github\phpoffice\phpexcelreader\Excel2007Reader
+Workbook:
+
+Worksheet
+    code name: Sheet1
+    title:     Data
+    size:      A1:K1393
+[A1,s,"2009 Amazon Affiliate Income"] 2009 Amazon Affiliate Income	[B1,null,NULL] 	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,null,NULL] 	[J1,null,NULL] 	[K1,null,NULL] 
+[A2,s,"This workbook is an example of how data can be summarized and analyzed using pivot tables. The data [...]"] This workbook is an example of how data can be summarized and analyzed using pivot tables. The data was imported from an amazon.com report for the year 2009. The URL column was added.	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,null,NULL] 	[J2,null,NULL] 	[K2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,null,NULL] 	[J3,null,NULL] 	[K3,null,NULL] 
+[A4,s,"Product Line"] Product Line	[B4,s,"Item Name"] Item Name	[C4,s,"ASIN"] ASIN	[D4,s,"Seller"] Seller	[E4,s,"Date \nShipped"] Date 
+Shipped	[F4,s,"Price (\$)"] Price ($)	[G4,s,"Referral Fee Rate"] Referral Fee Rate	[H4,s,"Items Shipped"] Items Shipped	[I4,s,"Revenue (\$)"] Revenue ($)	[J4,s,"Referral Fees (\$)"] Referral Fees ($)	[K4,s,"URL"] URL
+[A5,s,"Health & Personal Care"] Health & Personal Care	[B5,s,"(1) Dr. Schulze Intestinal Formula #1 Colon Cleanse Laxative - 90 Capsules"] (1) Dr. Schulze Intestinal Formula #1 Colon Cleanse Laxative - 90 Capsules	[C5,s,"B000SI5YNW"] B000SI5YNW	[D5,s,"Third Party"] Third Party	[E5,n,39962] 2009-05-29	[F5,n,18.09] 18.09	[G5,n,0.0702] 0.0702	[H5,n,1] 1	[I5,n,18.09] 18.09	[J5,n,1.27] 1.27	[K5,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C5&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A6,s,"Books"] Books	[B6,s,"1,000 Artist Journal Pages: Personal Pages and Inspirations (1000 Series)"] 1,000 Artist Journal Pages: Personal Pages and Inspirations (1000 Series)	[C6,n,1592534120] 1592534120	[D6,s,"Third Party"] Third Party	[E6,n,40147] 2009-11-30	[F6,n,15.68] 15.68	[G6,n,0.0651] 0.0651	[H6,n,1] 1	[I6,n,15.68] 15.68	[J6,n,1.02] 1.02	[K6,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C6&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A7,s,"Books"] Books	[B7,s,"100 Minds That Made the Market (Fisher Investments Press)"] 100 Minds That Made the Market (Fisher Investments Press)	[C7,s,"047013951X"] 047013951X	[D7,s,"Amazon.com"] Amazon.com	[E7,n,39840] 2009-01-27	[F7,n,13.57] 13.57	[G7,n,0.07] 0.07	[H7,n,1] 1	[I7,n,13.57] 13.57	[J7,n,0.95] 0.95	[K7,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C7&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A8,s,"Books"] Books	[B8,s,"1001 Natural Wonders You Must See Before You Die: UNESCO Edition"] 1001 Natural Wonders You Must See Before You Die: UNESCO Edition	[C8,n,764162330] 764162330	[D8,s,"Amazon.com"] Amazon.com	[E8,n,40168] 2009-12-21	[F8,n,23.1] 23.1	[G8,n,0.0701] 0.0701	[H8,n,1] 1	[I8,n,23.1] 23.1	[J8,n,1.62] 1.62	[K8,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C8&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A9,s,"Books"] Books	[B9,s,"1001 Paintings You Must See Before You Die"] 1001 Paintings You Must See Before You Die	[C9,n,789315246] 789315246	[D9,s,"Amazon.com"] Amazon.com	[E9,n,40168] 2009-12-21	[F9,n,24.39] 24.39	[G9,n,0.0701] 0.0701	[H9,n,1] 1	[I9,n,24.39] 24.39	[J9,n,1.71] 1.71	[K9,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C9&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A10,s,"Electronics"] Electronics	[B10,s,"13 Pack of HP 02 Compatible Ink Cartridges: 3 Black + 2 Cyan, Magenta, Yellow, Light Cyan, Light Mag[...]"] 13 Pack of HP 02 Compatible Ink Cartridges: 3 Black + 2 Cyan, Magenta, Yellow, Light Cyan, Light Magenta by 4inkjets/LD	[C10,s,"B0016IQK72"] B0016IQK72	[D10,s,"Third Party"] Third Party	[E10,n,39889] 2009-03-17	[F10,n,59.99] 59.99	[G10,n,0.04] 0.04	[H10,n,1] 1	[I10,n,59.99] 59.99	[J10,n,2.4] 2.4	[K10,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C10&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A11,s,"Tools & Hardware"] Tools & Hardware	[B11,s,"16-Piece Deluxe Watch Opener Tool Kit Repair Pin Remover"] 16-Piece Deluxe Watch Opener Tool Kit Repair Pin Remover	[C11,s,"B000T9VK56"] B000T9VK56	[D11,s,"Third Party"] Third Party	[E11,n,40072] 2009-09-16	[F11,n,9.75] 9.75	[G11,n,0.0646] 0.0646	[H11,n,1] 1	[I11,n,9.75] 9.75	[J11,n,0.63] 0.63	[K11,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C11&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A12,s,"Electronics"] Electronics	[B12,s,"2 in 1 USB Retractable Data Cable for Creative Zen Vision V, V Plus, Micro, Micro Photo, Muvo Slim, [...]"] 2 in 1 USB Retractable Data Cable for Creative Zen Vision V, V Plus, Micro, Micro Photo, Muvo Slim, Xmod, Stone, Neeon 2, Neeon 512mb, Neeon 1gb, Neeo	[C12,s,"B000XHN61K"] B000XHN61K	[D12,s,"Third Party"] Third Party	[E12,n,39997] 2009-07-03	[F12,n,3.33] 3.33	[G12,n,0.039] 0.039	[H12,n,2] 2	[I12,n,6.66] 6.66	[J12,n,0.26] 0.26	[K12,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C12&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A13,s,"Books"] Books	[B13,s,"2 Over 1 Game Force (The Official Better Bridge)"] 2 Over 1 Game Force (The Official Better Bridge)	[C13,s,"093946084X"] 093946084X	[D13,s,"Amazon.com"] Amazon.com	[E13,n,40009] 2009-07-15	[F13,n,13.57] 13.57	[G13,n,0.0648] 0.0648	[H13,n,1] 1	[I13,n,13.57] 13.57	[J13,n,0.88] 0.88	[K13,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C13&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A14,s,"Books"] Books	[B14,s,"2666: A Novel"] 2666: A Novel	[C14,n,312429215] 312429215	[D14,s,"Third Party"] Third Party	[E14,n,40147] 2009-11-30	[F14,n,11.97] 11.97	[G14,n,0.0652] 0.0652	[H14,n,1] 1	[I14,n,11.97] 11.97	[J14,n,0.78] 0.78	[K14,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C14&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A15,s,"Toys & Games"] Toys & Games	[B15,s,"2-Channel RC Super Sonic Radio Control Airplane"] 2-Channel RC Super Sonic Radio Control Airplane	[C15,s,"B000JCSS4O"] B000JCSS4O	[D15,s,"Third Party"] Third Party	[E15,n,40145] 2009-11-28	[F15,n,21.25] 21.25	[G15,n,0.0649] 0.0649	[H15,n,1] 1	[I15,n,21.25] 21.25	[J15,n,1.38] 1.38	[K15,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C15&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A16,s,"Kitchen & Housewares"] Kitchen & Housewares	[B16,s,"3D THE BRAIN Miscellaneous Candy Mold Chocolate"] 3D THE BRAIN Miscellaneous Candy Mold Chocolate	[C16,s,"B000EJRBHW"] B000EJRBHW	[D16,s,"Third Party"] Third Party	[E16,n,40107] 2009-10-21	[F16,n,2.29] 2.29	[G16,n,0.0699] 0.0699	[H16,n,1] 1	[I16,n,2.29] 2.29	[J16,n,0.16] 0.16	[K16,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C16&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A17,s,"Other"] Other	[B17,s,"5 X LED MINI MICRO BLACK KEYCHAIN KEY RING SUPER BRIGHT FLASH LIGHT WHITE LIGHT"] 5 X LED MINI MICRO BLACK KEYCHAIN KEY RING SUPER BRIGHT FLASH LIGHT WHITE LIGHT	[C17,s,"B001EOZVCS"] B001EOZVCS	[D17,s,"Third Party"] Third Party	[E17,n,39818] 2009-01-05	[F17,n,9.95] 9.95	[G17,n,0.0704] 0.0704	[H17,n,1] 1	[I17,n,9.95] 9.95	[J17,n,0.7] 0.7	[K17,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C17&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A18,s,"MP3 Downloads"] MP3 Downloads	[B18,s,"500+ Sound Effects"] 500+ Sound Effects	[C18,s,"B002OVD5FK"] B002OVD5FK	[D18,s,"Amazon.com"] Amazon.com	[E18,n,40117] 2009-10-31	[F18,n,1.99] 1.99	[G18,n,0.1005] 0.1005	[H18,n,1] 1	[I18,n,1.99] 1.99	[J18,n,0.2] 0.2	[K18,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C18&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A19,s,"MP3 Downloads"] MP3 Downloads	[B19,s,"808s & Heartbreak"] 808s & Heartbreak	[C19,s,"B001L99XQQ"] B001L99XQQ	[D19,s,"Amazon.com"] Amazon.com	[E19,n,39945] 2009-05-12	[F19,n,5] 5	[G19,n,0.1] 0.1	[H19,n,1] 1	[I19,n,5] 5	[J19,n,0.5] 0.5	[K19,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C19&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[A20,s,"Books"] Books	[B20,s,"92 Pacific Boulevard (Cedar Cove)"] 92 Pacific Boulevard (Cedar Cove)	[C20,n,778326691] 778326691	[D20,s,"Amazon.com"] Amazon.com	[E20,n,40079] 2009-09-23	[F20,n,7.99] 7.99	[G20,n,0.0651] 0.0651	[H20,n,1] 1	[I20,n,7.99] 7.99	[J20,n,0.52] 0.52	[K20,f,"=HYPERLINK(\"http://www.amazon.com/exec/obidos/ISBN=\"&C20&\"/ref=nosim/jwalkassociateA/\",\"<link>\")"] 
+[rows in range 21 to 1390 skipped]
+[A1391,null,NULL] 	[B1391,null,NULL] 	[C1391,null,NULL] 	[D1391,null,NULL] 	[E1391,null,NULL] 	[F1391,null,NULL] 	[G1391,null,NULL] 	[H1391,null,NULL] 	[I1391,null,NULL] 	[J1391,null,NULL] 	[K1391,null,NULL] 
+[A1392,null,NULL] 	[B1392,null,NULL] 	[C1392,null,NULL] 	[D1392,null,NULL] 	[E1392,null,NULL] 	[F1392,null,NULL] 	[G1392,null,NULL] 	[H1392,null,NULL] 	[I1392,null,NULL] 	[J1392,null,NULL] 	[K1392,null,NULL] 
+[A1393,null,NULL] 	[B1393,null,NULL] 	[C1393,null,NULL] 	[D1393,null,NULL] 	[E1393,null,NULL] 	[F1393,null,NULL] 	[G1393,null,NULL] 	[H1393,null,NULL] 	[I1393,null,NULL] 	[J1393,null,NULL] 	[K1393,null,NULL] 
+Worksheet
+    code name: Sheet2
+    title:     Pivot Table 1
+    size:      A1:L2040
+[A1,s,"Product Line"] Product Line	[B1,s,"Books"] Books	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,null,NULL] 	[J1,null,NULL] 	[K1,null,NULL] 	[L1,null,NULL] 
+[A2,s,"Seller"] Seller	[B2,s,"(All)"] (All)	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,null,NULL] 	[J2,null,NULL] 	[K2,null,NULL] 	[L2,null,NULL] 
+[A3,null,NULL] 	[B3,null,NULL] 	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,null,NULL] 	[J3,null,NULL] 	[K3,null,NULL] 	[L3,null,NULL] 
+[A4,s,"Item"] Item	[B4,s,"Amazon Revenue"] Amazon Revenue	[C4,s,"No. \nSold"] No. 
+Sold	[D4,s,"Referral \nPct"] Referral 
+Pct	[E4,s,"Avg. Unit Price"] Avg. Unit Price	[F4,s,"Referral \nFees"] Referral 
+Fees	[G4,null,NULL] 	[H4,null,NULL] 	[I4,null,NULL] 	[J4,null,NULL] 	[K4,null,NULL] 	[L4,null,NULL] 
+[A5,s,"Fundamentals of Corporate Finance Alternate Value 8th Edition"] Fundamentals of Corporate Finance Alternate Value 8th Edition	[B5,n,139.52] 139.52	[C5,n,1] 1	[D5,n,0.070025802752294] 0.070025802752294	[E5,n,139.52] 139.52	[F5,n,9.77] 9.77	[G5,null,NULL] 	[H5,null,NULL] 	[I5,null,NULL] 	[J5,null,NULL] 	[K5,null,NULL] 	[L5,null,NULL] 
+[A6,s,"Conceptual Physical Science (4th Edition)"] Conceptual Physical Science (4th Edition)	[B6,n,106.31] 106.31	[C6,n,1] 1	[D6,n,0.069984009030195] 0.069984009030195	[E6,n,106.31] 106.31	[F6,n,7.44] 7.44	[G6,null,NULL] 	[H6,null,NULL] 	[I6,null,NULL] 	[J6,null,NULL] 	[K6,null,NULL] 	[L6,null,NULL] 
+[A7,s,"Mr. Spreadsheet's Excel 2007 Library"] Mr. Spreadsheet's Excel 2007 Library	[B7,n,4758.77] 4758.77	[C7,n,43] 43	[D7,n,0.068103732687228] 0.068103732687228	[E7,n,105.75044444444] 105.75044444444	[F7,n,324.09] 324.09	[G7,null,NULL] 	[H7,null,NULL] 	[I7,null,NULL] 	[J7,null,NULL] 	[K7,null,NULL] 	[L7,null,NULL] 
+[A8,s,"Office 2007 Library: Excel 2007 Bible, Access 2007 Bible, PowerPoint 2007 Bible, Word 2007 Bible"] Office 2007 Library: Excel 2007 Bible, Access 2007 Bible, PowerPoint 2007 Bible, Word 2007 Bible	[B8,n,91.34] 91.34	[C8,n,1] 1	[D8,n,0.069958397197285] 0.069958397197285	[E8,n,91.34] 91.34	[F8,n,6.39] 6.39	[G8,null,NULL] 	[H8,null,NULL] 	[I8,null,NULL] 	[J8,null,NULL] 	[K8,null,NULL] 	[L8,null,NULL] 
+[A9,s,"The R Book"] The R Book	[B9,n,88] 88	[C9,n,1] 1	[D9,n,0.07] 0.07	[E9,n,88] 88	[F9,n,6.16] 6.16	[G9,null,NULL] 	[H9,null,NULL] 	[I9,null,NULL] 	[J9,null,NULL] 	[K9,null,NULL] 	[L9,null,NULL] 
+[A10,s,"Financial Modelling in Practice: A Concise Guide for Intermediate and Advanced Level with CD ROM (Th[...]"] Financial Modelling in Practice: A Concise Guide for Intermediate and Advanced Level with CD ROM (The Wiley Finance Series)	[B10,n,75.6] 75.6	[C10,n,1] 1	[D10,n,0.069973544973545] 0.069973544973545	[E10,n,75.6] 75.6	[F10,n,5.29] 5.29	[G10,null,NULL] 	[H10,null,NULL] 	[I10,null,NULL] 	[J10,null,NULL] 	[K10,null,NULL] 	[L10,null,NULL] 
+[A11,s,"Vbscript for Dummies"] Vbscript for Dummies	[B11,n,74.95] 74.95	[C11,n,1] 1	[D11,n,0.070046697798532] 0.070046697798532	[E11,n,74.95] 74.95	[F11,n,5.25] 5.25	[G11,null,NULL] 	[H11,null,NULL] 	[I11,null,NULL] 	[J11,null,NULL] 	[K11,null,NULL] 	[L11,null,NULL] 
+[A12,s,"Guide to Financial Reporting and Analysis"] Guide to Financial Reporting and Analysis	[B12,n,70.02] 70.02	[C12,n,1] 1	[D12,n,0.064981433876035] 0.064981433876035	[E12,n,70.02] 70.02	[F12,n,4.55] 4.55	[G12,null,NULL] 	[H12,null,NULL] 	[I12,null,NULL] 	[J12,null,NULL] 	[K12,null,NULL] 	[L12,null,NULL] 
+[A13,s,"Principles of Finance with Excel: Includes CD"] Principles of Finance with Excel: Includes CD	[B13,n,67.23] 67.23	[C13,n,1] 1	[D13,n,0.065000743715603] 0.065000743715603	[E13,n,67.23] 67.23	[F13,n,4.37] 4.37	[G13,null,NULL] 	[H13,null,NULL] 	[I13,null,NULL] 	[J13,null,NULL] 	[K13,null,NULL] 	[L13,null,NULL] 
+[A14,s,"Student Study Guide for Biology"] Student Study Guide for Biology	[B14,n,63.72] 63.72	[C14,n,1] 1	[D14,n,0.069993722536095] 0.069993722536095	[E14,n,63.72] 63.72	[F14,n,4.46] 4.46	[G14,null,NULL] 	[H14,null,NULL] 	[I14,null,NULL] 	[J14,null,NULL] 	[K14,null,NULL] 	[L14,null,NULL] 
+[A15,s,"Financial Modeling Using Excel and VBA (Wiley Finance)"] Financial Modeling Using Excel and VBA (Wiley Finance)	[B15,n,59.85] 59.85	[C15,n,1] 1	[D15,n,0.06499582289056] 0.06499582289056	[E15,n,59.85] 59.85	[F15,n,3.89] 3.89	[G15,null,NULL] 	[H15,null,NULL] 	[I15,null,NULL] 	[J15,null,NULL] 	[K15,null,NULL] 	[L15,null,NULL] 
+[A16,s,"The Restaurant Managers Handbook: How to Set Up, Operate, and Manage a Financially Successful Food S[...]"] The Restaurant Managers Handbook: How to Set Up, Operate, and Manage a Financially Successful Food Service Operation	[B16,n,54.97] 54.97	[C16,n,1] 1	[D16,n,0.064944515190104] 0.064944515190104	[E16,n,54.97] 54.97	[F16,n,3.57] 3.57	[G16,null,NULL] 	[H16,null,NULL] 	[I16,null,NULL] 	[J16,null,NULL] 	[K16,null,NULL] 	[L16,null,NULL] 
+[A17,s,"Building Financial Models (McGraw-Hill Finance & Investing)"] Building Financial Models (McGraw-Hill Finance & Investing)	[B17,n,53.96] 53.96	[C17,n,1] 1	[D17,n,0.065048183839881] 0.065048183839881	[E17,n,53.96] 53.96	[F17,n,3.51] 3.51	[G17,null,NULL] 	[H17,null,NULL] 	[I17,null,NULL] 	[J17,null,NULL] 	[K17,null,NULL] 	[L17,null,NULL] 
+[A18,s,"Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions (Wiley Finance)"] Investment Banking: Valuation, Leveraged Buyouts, and Mergers and Acquisitions (Wiley Finance)	[B18,n,50.4] 50.4	[C18,n,1] 1	[D18,n,0.065079365079365] 0.065079365079365	[E18,n,50.4] 50.4	[F18,n,3.28] 3.28	[G18,null,NULL] 	[H18,null,NULL] 	[I18,null,NULL] 	[J18,null,NULL] 	[K18,null,NULL] 	[L18,null,NULL] 
+[A19,s,"Excel for Scientists and Engineers: Numerical Methods"] Excel for Scientists and Engineers: Numerical Methods	[B19,n,46.1] 46.1	[C19,n,1] 1	[D19,n,0.070065075921909] 0.070065075921909	[E19,n,46.1] 46.1	[F19,n,3.23] 3.23	[G19,null,NULL] 	[H19,null,NULL] 	[I19,null,NULL] 	[J19,null,NULL] 	[K19,null,NULL] 	[L19,null,NULL] 
+[A20,s,"High Probability Trading Strategies: Entry to Exit Tactics for the Forex, Futures, and Stock Markets[...]"] High Probability Trading Strategies: Entry to Exit Tactics for the Forex, Futures, and Stock Markets (Wiley Trading)	[B20,n,44.1] 44.1	[C20,n,1] 1	[D20,n,0.065079365079365] 0.065079365079365	[E20,n,44.1] 44.1	[F20,n,2.87] 2.87	[G20,null,NULL] 	[H20,null,NULL] 	[I20,null,NULL] 	[J20,null,NULL] 	[K20,null,NULL] 	[L20,null,NULL] 
+[rows in range 21 to 2037 skipped]
+[A2038,null,NULL] 	[B2038,null,NULL] 	[C2038,null,NULL] 	[D2038,null,NULL] 	[E2038,null,NULL] 	[F2038,null,NULL] 	[G2038,null,NULL] 	[H2038,null,NULL] 	[I2038,null,NULL] 	[J2038,null,NULL] 	[K2038,null,NULL] 	[L2038,null,NULL] 
+[A2039,null,NULL] 	[B2039,null,NULL] 	[C2039,null,NULL] 	[D2039,null,NULL] 	[E2039,null,NULL] 	[F2039,null,NULL] 	[G2039,null,NULL] 	[H2039,null,NULL] 	[I2039,null,NULL] 	[J2039,null,NULL] 	[K2039,null,NULL] 	[L2039,null,NULL] 
+[A2040,null,NULL] 	[B2040,null,NULL] 	[C2040,null,NULL] 	[D2040,null,NULL] 	[E2040,null,NULL] 	[F2040,null,NULL] 	[G2040,null,NULL] 	[H2040,null,NULL] 	[I2040,null,NULL] 	[J2040,null,NULL] 	[K2040,null,NULL] 	[L2040,null,NULL] 
+Worksheet
+    code name: Worksheet
+    title:     Pivot Table 2
+    size:      A1:L34
+[A1,s,"Seller"] Seller	[B1,s,"(All)"] (All)	[C1,null,NULL] 	[D1,null,NULL] 	[E1,null,NULL] 	[F1,null,NULL] 	[G1,null,NULL] 	[H1,null,NULL] 	[I1,f,"=\"Sales via \"&B1"] 	[J1,null,NULL] 	[K1,null,NULL] 	[L1,null,NULL] 
+[A2,null,NULL] 	[B2,null,NULL] 	[C2,null,NULL] 	[D2,null,NULL] 	[E2,null,NULL] 	[F2,null,NULL] 	[G2,null,NULL] 	[H2,null,NULL] 	[I2,f,"=B4"] 	[J2,f,"=C4"] 	[K2,f,"=D4"] 	[L2,f,"=E4"] 
+[A3,s,"Sum of Referral Fees (\$)"] Sum of Referral Fees ($)	[B3,s," "]  	[C3,null,NULL] 	[D3,null,NULL] 	[E3,null,NULL] 	[F3,null,NULL] 	[G3,null,NULL] 	[H3,null,NULL] 	[I3,f,"=GETPIVOTDATA(\"Referral Fees (\$)\",\$A\$3,\"Date Shipped\",1)"] 	[J3,f,"=GETPIVOTDATA(\"Referral Fees (\$)\",\$A\$3,\"Date Shipped\",2)"] 	[K3,f,"=GETPIVOTDATA(\"Referral Fees (\$)\",\$A\$3,\"Date Shipped\",3)"] 	[L3,f,"=GETPIVOTDATA(\"Referral Fees (\$)\",\$A\$3,\"Date Shipped\",4)"] 
+[A4,s,"Row Labels"] Row Labels	[B4,s,"Qtr1"] Qtr1	[C4,s,"Qtr2"] Qtr2	[D4,s,"Qtr3"] Qtr3	[E4,s,"Qtr4"] Qtr4	[F4,s,"Grand Total"] Grand Total	[G4,null,NULL] 	[H4,null,NULL] 	[I4,null,NULL] 	[J4,null,NULL] 	[K4,null,NULL] 	[L4,null,NULL] 
+[A5,s,"Books"] Books	[B5,n,529.94] 529.94	[C5,n,413.35] 413.35	[D5,n,419.45] 419.45	[E5,n,374.24] 374.24	[F5,n,1736.98] 1736.98	[G5,null,NULL] 	[H5,null,NULL] 	[I5,null,NULL] 	[J5,null,NULL] 	[K5,null,NULL] 	[L5,null,NULL] 
+[A6,s,"Kitchen & Housewares"] Kitchen & Housewares	[B6,n,141.26] 141.26	[C6,n,1.76] 1.76	[D6,n,0] 0	[E6,n,13.5] 13.5	[F6,n,156.52] 156.52	[G6,null,NULL] 	[H6,null,NULL] 	[I6,null,NULL] 	[J6,null,NULL] 	[K6,null,NULL] 	[L6,null,NULL] 
+[A7,s,"Kindle Hardware"] Kindle Hardware	[B7,n,41.9] 41.9	[C7,n,71.8] 71.8	[D7,n,32.9] 32.9	[E7,n,0] 0	[F7,n,146.6] 146.6	[G7,null,NULL] 	[H7,null,NULL] 	[I7,null,NULL] 	[J7,null,NULL] 	[K7,null,NULL] 	[L7,null,NULL] 
+[A8,s,"Electronics"] Electronics	[B8,n,20.54] 20.54	[C8,n,23.77] 23.77	[D8,n,4.45] 4.45	[E8,n,35.42] 35.42	[F8,n,84.18] 84.18	[G8,null,NULL] 	[H8,null,NULL] 	[I8,null,NULL] 	[J8,null,NULL] 	[K8,null,NULL] 	[L8,null,NULL] 
+[A9,s,"Apparel & Accessories"] Apparel & Accessories	[B9,n,0] 0	[C9,n,37.15] 37.15	[D9,n,0] 0	[E9,n,13.85] 13.85	[F9,n,51] 51	[G9,null,NULL] 	[H9,null,NULL] 	[I9,null,NULL] 	[J9,null,NULL] 	[K9,null,NULL] 	[L9,null,NULL] 
+[A10,s,"Music"] Music	[B10,n,18.0] 18	[C10,n,3.51] 3.51	[D10,n,2.3] 2.3	[E10,n,23.1] 23.1	[F10,n,46.91] 46.91	[G10,null,NULL] 	[H10,null,NULL] 	[I10,null,NULL] 	[J10,null,NULL] 	[K10,null,NULL] 	[L10,null,NULL] 
+[A11,s,"DVD"] DVD	[B11,n,16.24] 16.24	[C11,n,4.3] 4.3	[D11,n,8.33] 8.33	[E11,n,13.16] 13.16	[F11,n,42.03] 42.03	[G11,null,NULL] 	[H11,null,NULL] 	[I11,null,NULL] 	[J11,null,NULL] 	[K11,null,NULL] 	[L11,null,NULL] 
+[A12,s,"Software"] Software	[B12,n,3.58] 3.58	[C12,n,18.06] 18.06	[D12,n,0] 0	[E12,n,19.5] 19.5	[F12,n,41.14] 41.14	[G12,null,NULL] 	[H12,null,NULL] 	[I12,null,NULL] 	[J12,null,NULL] 	[K12,null,NULL] 	[L12,null,NULL] 
+[A13,s,"Health & Personal Care"] Health & Personal Care	[B13,n,15.96] 15.96	[C13,n,8.02] 8.02	[D13,n,5.24] 5.24	[E13,n,9.98] 9.98	[F13,n,39.2] 39.2	[G13,null,NULL] 	[H13,null,NULL] 	[I13,null,NULL] 	[J13,null,NULL] 	[K13,null,NULL] 	[L13,null,NULL] 
+[A14,s,"MP3 Downloads"] MP3 Downloads	[B14,n,12.08] 12.08	[C14,n,2.08] 2.08	[D14,n,0.69] 0.69	[E14,n,16.87] 16.87	[F14,n,31.72] 31.72	[G14,null,NULL] 	[H14,null,NULL] 	[I14,null,NULL] 	[J14,null,NULL] 	[K14,null,NULL] 	[L14,null,NULL] 
+[A15,s,"Sports & Outdoors"] Sports & Outdoors	[B15,n,1.35] 1.35	[C15,n,8.17] 8.17	[D15,n,3.16] 3.16	[E15,n,16.67] 16.67	[F15,n,29.35] 29.35	[G15,null,NULL] 	[H15,null,NULL] 	[I15,null,NULL] 	[J15,null,NULL] 	[K15,null,NULL] 	[L15,null,NULL] 
+[A16,s,"Toys & Games"] Toys & Games	[B16,n,0] 0	[C16,n,8.12] 8.12	[D16,n,4.77] 4.77	[E16,n,9.32] 9.32	[F16,n,22.21] 22.21	[G16,null,NULL] 	[H16,null,NULL] 	[I16,null,NULL] 	[J16,null,NULL] 	[K16,null,NULL] 	[L16,null,NULL] 
+[A17,s,"Video Games"] Video Games	[B17,n,12.02] 12.02	[C17,n,9.19] 9.19	[D17,n,0] 0	[E17,n,0] 0	[F17,n,21.21] 21.21	[G17,null,NULL] 	[H17,null,NULL] 	[I17,null,NULL] 	[J17,null,NULL] 	[K17,null,NULL] 	[L17,null,NULL] 
+[A18,s,"Tools & Hardware"] Tools & Hardware	[B18,n,1.56] 1.56	[C18,n,5.83] 5.83	[D18,n,0.63] 0.63	[E18,n,11.29] 11.29	[F18,n,19.31] 19.31	[G18,null,NULL] 	[H18,null,NULL] 	[I18,null,NULL] 	[J18,null,NULL] 	[K18,null,NULL] 	[L18,null,NULL] 
+[A19,s,"Health & Personal Care Appliances"] Health & Personal Care Appliances	[B19,n,0.82] 0.82	[C19,n,3.15] 3.15	[D19,n,6.5] 6.5	[E19,n,4.66] 4.66	[F19,n,15.13] 15.13	[G19,null,NULL] 	[H19,null,NULL] 	[I19,null,NULL] 	[J19,null,NULL] 	[K19,null,NULL] 	[L19,null,NULL] 
+[A20,s,"Watches"] Watches	[B20,n,0] 0	[C20,n,0] 0	[D20,n,0] 0	[E20,n,7.8] 7.8	[F20,n,7.8] 7.8	[G20,null,NULL] 	[H20,null,NULL] 	[I20,null,NULL] 	[J20,null,NULL] 	[K20,null,NULL] 	[L20,null,NULL] 
+[rows in range 21 to 31 skipped]
+[A32,s,"Kindle eBooks"] Kindle eBooks	[B32,n,0] 0	[C32,n,0] 0	[D32,n,0] 0	[E32,n,0] 0	[F32,n,0] 0	[G32,null,NULL] 	[H32,null,NULL] 	[I32,null,NULL] 	[J32,null,NULL] 	[K32,null,NULL] 	[L32,null,NULL] 
+[A33,s,"VHS"] VHS	[B33,n,0] 0	[C33,n,0] 0	[D33,n,0] 0	[E33,n,0] 0	[F33,n,0] 0	[G33,null,NULL] 	[H33,null,NULL] 	[I33,null,NULL] 	[J33,null,NULL] 	[K33,null,NULL] 	[L33,null,NULL] 
+[A34,s,"Grand Total"] Grand Total	[B34,n,827.87] 827.87	[C34,n,618.68] 618.68	[D34,n,497.52] 497.52	[E34,n,580.77] 580.77	[F34,n,2524.84] 2524.84	[G34,null,NULL] 	[H34,null,NULL] 	[I34,null,NULL] 	[J34,null,NULL] 	[K34,null,NULL] 	[L34,null,NULL] 
